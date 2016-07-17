@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "description": "Old Delhi Branch Management Project",
   "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gunjanshah80/odrsa-ui.git"
+  }, 
   "devDependencies": {
     "grunt": "0.4.2",
     "grunt-contrib-concat":     "0.3.0",
