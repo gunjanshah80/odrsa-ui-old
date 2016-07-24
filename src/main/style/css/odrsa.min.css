@@ -5,7 +5,7 @@ Dated: 21/07/16
 */
 
 body {
- background-color: #6699ff
+ background-color: #8580ea
 }
 
 .odrsa-header {
@@ -16,18 +16,60 @@ body {
 	top: 0;
 	height: 100px;
     width: 100%;
-    position: absolute;
+    position: fixed;
+}
+
+.rs-logo {
+	top: 20px;
+	height: 80px;
+	width: 100px;
+	position: absolute;
 }
 
 .odrsa-login-container {
-    text-align: center;
-    background: #b3ccff;
+    
+    background: #0B0B61;
     position: absolute;
-    height: 50%;
+    height: 60%;
     width: 40%;
-    margin-top: 150px;
-    margin-left: 385px;
+    margin-top: 125px;
+    margin-left: 390px;
     border-radius: 25px;
+}
+
+.odrsa-login-container .login-text {
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22pt;
+	color: #F0F8FF;
+	margin-left: 50px;
+	margin-top: 25px;
+}
+
+.odrsa-login-container .label-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #F0F8FF;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.odrsa-login-container .input-format {	
+	margin-left: 50px;
+	margin-top: 5px;
+}
+
+.odrsa-login-container .login-button-align {	
+	margin-top: 60px;
+	margin-left: 50px;
+}
+
+#login-button {
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
 }
 
 .odrsa-footer {
@@ -38,5 +80,5 @@ body {
 	bottom: 0;
 	height: 100px;
     width: 100%;
-    position: absolute;
+    position: fixed;
 }

@@ -80,6 +80,12 @@ module.exports = function (grunt) {
                                src:  'angular-messages.js',
                                expand: true
                            },
+			   {
+                               cwd: 'bower_components/angular-cookie',
+                               dest: 'target/build/main/bower_components',
+                               src:  'angular-cookie.js',
+                               expand: true
+                           },
                            {
                                cwd: 'bower_components/angular-route',
                                dest: 'target/build/main/bower_components',
@@ -93,7 +99,7 @@ module.exports = function (grunt) {
                                expand: true
                            },
                            {
-                               cwd: 'bower_components/jquery-ui/ui',
+                               cwd: 'bower_components/jquery-ui',
                                dest: 'target/build/main/bower_components',
                                src:  'jquery-ui.js',
                                expand: true
