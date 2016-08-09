@@ -82,3 +82,85 @@ body {
     width: 100%;
     position: fixed;
 }
+
+/* Home Tab menu settings */
+
+.tabcontainer {
+	margin-left: 0;
+	margin-top: 110px;
+	width: 90%;
+	padding-bottom:1px;
+	background-color: #FFEC33;
+	text-align: center;
+}
+
+.tabcontainer ul#tabmenu
+{
+    width:100%;
+    margin-left: 125px;
+    margin-top: 100px;
+    text-align:left;
+    list-style:none;
+    padding:0;
+    font-size:0;
+    position:relative;
+}
+
+
+.tabcontainer ul#tabmenu li
+{
+    display:inline;
+    list-style:none; 
+    padding:0;    
+}
+
+.tabcontainer ul#tabmenu li a
+{
+    letter-spacing:normal;
+    color:#F0F8FF;
+    padding:0 40px;
+    line-height:25px;
+    font-size:15px;
+    font-weight:normal;
+    font-family:Arial;
+    text-decoration:none;
+    display:inline-block; 
+    outline:0;
+    
+    border:1px solid #CAD0DB;
+    border-bottom:1px;
+    background:#0B0B61;
+    position:relative;
+    top:0;
+    bottom: 1px;
+    z-index:4;  
+    border-radius:4px 4px 0 0;
+}
+
+.tabcontainer ul#tabmenu li a:hover {
+    color: #0B0B61;
+    background: #c0dbff;
+}
+
+.logout-text {
+	margin-top: 25px;
+	margin-left: 1250px;
+	color: #F0F8FF;
+	font-size:15px;
+    font-weight:normal;
+    font-family:Arial;
+    position: absolute;
+}
+
+.logout-text .logoutMsg {
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	visibility: hidden;
+  	opacity: 0;
+}
+
+.logout-text:hover .logoutMsg {
+  visibility: visible;
+  opacity: 1;
+}

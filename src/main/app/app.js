@@ -9,8 +9,10 @@
 
     	$routeProvider
             .when('/login', {
-                templateUrl: 'login/login.view.html',
-                controllerAs: 'vm'
+                templateUrl: 'login/login.view.html'
+            })
+            .when('/home', {
+                templateUrl: 'home/home.view.html'
             })
             .otherwise({ 
             	redirectTo: '/login' 
@@ -22,13 +24,15 @@
     mods = [
     'ngRoute', 
     'ngMessages',
-    'login'
+    'login',
+    'home'
     ]; 
 
     md = angular.module('app', mods);
 
     md.controller('MainCtrl', ['$rootScope', function($rootScope) {
     	$rootScope.isExistingLogin = false;
+        $rootScope.isLoginPage = false;
     }]);
     
  	md.config(['$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
@@ -37,6 +41,7 @@
  		routesConfigFn($routeProvider);
  	}]); 
 
+    /*
  	md.run(['$rootScope', '$location', function run($rootScope, $location) {
 
  		$rootScope.$on('$locationChangeStart', function(event, next, current) {
@@ -45,6 +50,6 @@
  			}
  		});
 
- 	}]);
+ 	}]); */
 
 }).call(this); 
