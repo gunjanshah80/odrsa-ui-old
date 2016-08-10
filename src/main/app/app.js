@@ -23,7 +23,7 @@
  
     mods = [
     'ngRoute', 
-    'ngMessages',
+    'ngMessages',    
     'login',
     'home'
     ]; 
@@ -37,6 +37,7 @@
     
  	md.config(['$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
  		$httpProvider.defaults.headers.common['Accept'] = 'application/json';
+        $httpProvider.defaults.useXDomain = true;
 
  		routesConfigFn($routeProvider);
  	}]); 

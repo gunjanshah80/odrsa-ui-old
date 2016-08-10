@@ -1,0 +1,20 @@
+<div class="odrsa-login-container" ng-controller="loginCtrl">
+	<div class="login-text">Login</div>
+	<form name="login" ng-submit="signin()" role="form" autocomplete="OFF">
+		<div class="label-text">
+			<label for="username">Username</label>
+		</div>
+		<input type="text" name="username" id="username" class="input-format" ng-model="model.username" ng-maxlength="32" required autofocus ng-class="{ 'has-error' : login.username.$invalid && !login.username.$pristine }"/>
+        <span ng-show="login.username.$error.maxlength" style="color:red" class="errors">Too long!.</span>
+        <div class="label-text">
+			<label for="password">Password</label>
+		</div>
+		<input type="password" name="password" id="password" class="input-format" ng-model="model.password" ng-maxlength="10" required autofocus/>       
+        <span ng-show="login.password.$error.maxlength" style="color:red" class="errors">Too long! (Max 10 char allowed).</span>
+        <div class="login-button-align">
+        	<button type="submit" id="login-button" ng-disabled="login.$invalid">Login</button> 
+        </div>      
+	</form>
+</div>
+</body>
+</html>
