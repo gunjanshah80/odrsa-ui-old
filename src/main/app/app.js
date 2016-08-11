@@ -24,6 +24,7 @@
     mods = [
     'ngRoute', 
     'ngMessages',    
+    'ngCookies',
     'login',
     'home'
     ]; 
