@@ -22,21 +22,21 @@
                         debugger;
 
                         var userLogin = {
-                                "userName": username,
-                                "userAuthData": password
+                                "username": username,
+                                "authdata": password
                         };
                 
                         var url = serverUrl + 'login';
 
                         var httpConfig = {
-                                withCredentials: true,                               
+                                withCredentials: true,
                                 headers : {
-                                        "Content-Type":'application/x-www-form-urlencoded'                                        
-                                }
+                                        "Content-Type" : 'application/json'
+                                }                                                              
                         };
                         
                         $http.post(url, userLogin, httpConfig).then(
-                                function(loginResponse) {
+                                function(response) {
                                         callback(response);
                         });
                 }

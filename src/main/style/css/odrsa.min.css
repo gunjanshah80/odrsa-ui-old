@@ -30,9 +30,9 @@ body {
     
     background: #0B0B61;
     position: absolute;
-    height: 60%;
+    height: 50%;
     width: 40%;
-    margin-top: 125px;
+    margin-top: 10%;
     margin-left: 390px;
     border-radius: 25px;
 }
@@ -57,6 +57,7 @@ body {
 .odrsa-login-container .input-format {	
 	margin-left: 50px;
 	margin-top: 5px;
+    border-radius: 5px;
 }
 
 .odrsa-login-container .login-button-align {	
@@ -142,11 +143,11 @@ body {
     background: #c0dbff;
 }
 
-.logout-text {
-	margin-top: 25px;
-	margin-left: 1250px;
-	color: #F0F8FF;
-	font-size:15px;
+..logout-text {
+    margin-top: 25px;
+    margin-left: 95%;
+    color: #F0F8FF;
+    font-size:15px;
     font-weight:normal;
     font-family:Arial;
     position: absolute;
