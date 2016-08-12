@@ -1,13 +1,15 @@
 <html>
 <body ng-controller="homeCtrl">
 	<div class="tabcontainer">
-		<ul id="tabmenu">
-			<li><a href="?11">About Us</a></li>
-			<li><a href="?11">Satsangis</a></li>
-			<li><a href="?11">Attendance</a></li>
-			<li><a href="?11">Reports</a></li>
-			<li><a href="?11">Contact Us</a></li>
-		</ul>
+		<div class="tabmenu">
+			<tabset>
+				<tab heading="About Us" ng-click="aboutus()"></tab>
+				<tab heading="Satsangis"></tab>
+				<tab heading="Attendance"></tab>
+				<tab heading="Reports"></tab>
+				<tab heading="Contact Us"></tab>
+			</tabset>
+		</div>
 	</div>	
 </body>
 </html>

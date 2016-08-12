@@ -11,6 +11,7 @@
     	function($scope, $location, $rootScope) {
 
     		$scope.$id = ctrlName;
+            $scope.aboutus = "afdaf afasf afasfa asa fasfa s";
 
         }        
 

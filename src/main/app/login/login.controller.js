@@ -7,21 +7,21 @@
 
     ctrlName = modName + 'Ctrl';
 
-    mod.controller(ctrlName, ['$scope', '$location', '$rootScope', 'AuthService', '$window',
-    	function($scope, $location, $rootScope, $authservice, $window) {
+    mod.controller(ctrlName, ['$scope', '$location', '$rootScope', 'AuthService', '$window', '$timeout',
+    	function($scope, $location, $rootScope, $authservice, $window, $timeout) {
 
     		$scope.$id = ctrlName;
 
             $scope.signin = function() {
                 debugger;
-                $scope.spinner = true;
+                $scope.loading = true;
                 $authservice.Login($scope.model.username, $scope.model.password, function (response) {
                   if (response.success) {
                       $rootScope.isLoginPage = false;
                       /* AuthenticationService.SetCredentials(vm.username, vm.password); */                      
-                      $scope.redirectUser();                      
+                      $timeout($scope.redirectUser(), 3000);                      
                   } else {
-                    $scope.spinner = false;
+                    $scope.loading = false;
                   }
                 });              
             };
@@ -32,7 +32,7 @@
             };
 
             initialiseController = function (){
-                  $scope.spinner = false;
+                  $scope.loading = false;
                   $scope.model = {};
                   $scope.model.username='';
                   $scope.model.password = '';

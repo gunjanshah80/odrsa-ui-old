@@ -27,13 +27,15 @@
                         };
                 
                         var url = serverUrl + 'login';
-
+                        var response = {success: true};
+                        callback(response);
+                        /*
                         var httpConfig = {
                                 withCredentials: true,
                                 headers : {
                                         "Content-Type" : 'application/json'
                                 }                                                              
-                        };
+                        }; */
                         
                         $http.post(url, userLogin, httpConfig).then(
                                 function(response) {

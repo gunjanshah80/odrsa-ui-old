@@ -61,7 +61,7 @@ body {
 }
 
 .odrsa-login-container .login-button-align {	
-	margin-top: 60px;
+	margin-top: 50px;
 	margin-left: 50px;
 }
 
@@ -87,15 +87,15 @@ body {
 /* Home Tab menu settings */
 
 .tabcontainer {
-	margin-left: 0;
+	margin-left: 5%;
 	margin-top: 110px;
 	width: 90%;
-	padding-bottom:1px;
-	background-color: #FFEC33;
+	padding-bottom:0;
+	background-color: #0B0B61;
 	text-align: center;
 }
 
-.tabcontainer ul#tabmenu
+.tabcontainer .tabmenu
 {
     width:100%;
     margin-left: 125px;
@@ -103,59 +103,22 @@ body {
     text-align:left;
     list-style:none;
     padding:0;
-    font-size:0;
-    position:relative;
+    font-size:14px;
 }
 
-
-.tabcontainer ul#tabmenu li
-{
-    display:inline;
-    list-style:none; 
-    padding:0;    
-}
-
-.tabcontainer ul#tabmenu li a
-{
-    letter-spacing:normal;
-    color:#F0F8FF;
-    padding:0 40px;
-    line-height:25px;
-    font-size:15px;
-    font-weight:normal;
-    font-family:Arial;
-    text-decoration:none;
-    display:inline-block; 
-    outline:0;
-    
-    border:1px solid #CAD0DB;
-    border-bottom:1px;
-    background:#0B0B61;
-    position:relative;
-    top:0;
-    bottom: 1px;
-    z-index:4;  
-    border-radius:4px 4px 0 0;
-}
-
-.tabcontainer ul#tabmenu li a:hover {
-    color: #0B0B61;
-    background: #c0dbff;
-}
-
-..logout-text {
+.logout-text {
     margin-top: 25px;
     margin-left: 95%;
     color: #F0F8FF;
     font-size:15px;
     font-weight:normal;
-    font-family:Arial;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
 }
 
 .logout-text .logoutMsg {
 	position: absolute;
-	top: 10px;
+	top: 25px;
 	left: -10px;
 	visibility: hidden;
   	opacity: 0;

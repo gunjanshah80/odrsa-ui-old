@@ -25,6 +25,7 @@
     'ngRoute', 
     'ngMessages',    
     'ngCookies',
+    'ui.bootstrap',
     'login',
     'home'
     ]; 
