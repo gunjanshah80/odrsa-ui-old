@@ -1,11 +1,8 @@
-<html>
-<body>	
-	<div class="logout-text" ng-if="!isLoginPage">
-		<a href=""> 
-			<img src="style/img/logout.png"/>			
-		</a>
-		<p class="logoutMsg">Logout</p>
-	</div>
-	<p>Old Delhi Satsang Branch</p>
-</body>
-</html>
+<div id="header" ng-controller="headerCtrl">
+<div class="logout-text" ng-if="!isLoginPage" >
+		<button ng-click="logout()" class="widget-button btn-primary btn-small login-button" aria-label="Log Out" title="Log Out">Logout
+		</button>
+		<img id="logoutSpinner" src="style/img/spinner.gif" style="margin-left:10px" ng-show="loading" />
+</div>
+<p>Old Delhi Satsang Branch</p>
+</div>

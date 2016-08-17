@@ -61,7 +61,7 @@ body {
 }
 
 .odrsa-login-container .login-button-align {	
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-left: 50px;
 }
 
@@ -70,7 +70,9 @@ body {
     width: 70px;
     border-radius: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
+    background-color: #F0F8FF;
+    color: #0B0B61;
 }
 
 .odrsa-footer {
@@ -97,7 +99,7 @@ body {
 
 .tabcontainer .tabmenu
 {
-    width:100%;
+    width:90%;
     margin-left: 125px;
     margin-top: 100px;
     text-align:left;
@@ -108,23 +110,10 @@ body {
 
 .logout-text {
     margin-top: 25px;
-    margin-left: 95%;
+    margin-left: 90%;
     color: #F0F8FF;
-    font-size:15px;
+    font-size:14px;
     font-weight:normal;
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
-}
-
-.logout-text .logoutMsg {
-	position: absolute;
-	top: 25px;
-	left: -10px;
-	visibility: hidden;
-  	opacity: 0;
-}
-
-.logout-text:hover .logoutMsg {
-  visibility: visible;
-  opacity: 1;
 }

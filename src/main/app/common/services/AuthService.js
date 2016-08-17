@@ -11,9 +11,7 @@
 		var service = {};
 		
 		service.Login = Login;
-/*        service.SetCredentials = SetCredentials;
-        service.ClearCredentials = ClearCredentials;
-        */
+                service.Logout = Logout;
 
         return service;
 
@@ -29,15 +27,32 @@
                         var url = serverUrl + 'login';
                         var response = {success: true};
                         callback(response);
-                        /*
+                        
                         var httpConfig = {
-                                withCredentials: true,
                                 headers : {
                                         "Content-Type" : 'application/json'
                                 }                                                              
-                        }; */
-                        
+                        };
+                        /*
                         $http.post(url, userLogin, httpConfig).then(
+                                function(response) {
+                                        callback(response);
+                        }); */
+                }
+
+                function Logout(sessionid, callback) {
+
+                        debugger;                        
+                
+                        var url = serverUrl + 'logout' + '/' + sessionid;
+                        
+                        var httpConfig = {
+                                headers : {
+                                        "Content-Type" : 'application/json'
+                                }                                                              
+                        };
+                        
+                        $http.get(url, httpConfig).then(
                                 function(response) {
                                         callback(response);
                         });

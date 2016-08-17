@@ -27,7 +27,8 @@
     'ngCookies',
     'ui.bootstrap',
     'login',
-    'home'
+    'home',
+    'header'
     ]; 
 
     md = angular.module('app', mods);
